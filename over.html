@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="xy,fwy,zly,wxf,tsm,thl,wc,zxy">
+  <title>Class Over</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/over.css">
+  <script type="application/javascript" src="js/over.js" charset="UTF-8"></script>
+  <script type="application/javascript" src="./jquery-2.2.4.js" charset="UTF-8"></script>
+  <script type="application/javascript" src="js/echarts.min.js" charset="UTF-8"></script>
+</head>
+
+<body style="background-color: #f4f3f9;background-image: url('./gif/bg2.gif');background-size: cover;">
+<div style="width: 100%;height: 100%">
+  <!-- 标题-->
+  <div class="title">
+    <div class="title_box">
+      <!--    左标题-->
+      <div class="title_box_left">
+        <span>
+          <strong>重庆天宫房地产集团8月份销售看板</strong>
+        </span>
+      </div>
+
+      <!--右标题-->
+      <div class="title_box_right">
+        <span style="color: white">选择日期:</span>
+        <input type="date" style="height: 25px;margin-left: 10px">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 总销售额...... -->
+  <div class="little_title">
+    <div id="feature">
+      <div class="featureone">
+        <h3>总销售额（万元）</h3>
+        <p>1214.23</p>
+      </div>
+      <div class="featuremiddle">
+        <div class="featuretwo" style="background-image: url('./img/upupup.jpg');background-size: cover">
+          <h3>总毛利润</h3>
+          <p>47.72%</p>
+        </div>
+        <div class="featurethree">
+          <h3>总毛利额（万元）</h3>
+          <span>579.44</span>
+          <span>查看详情 <a href=""><img src="./img/right.png"></a></span>
+        </div>
+        <div class="featurefour">
+          <h3>销售额完成进度</h3>
+          <span>33.24%</span>
+          <span>查看详情 <a href=""><img src="./img/right.png"></a></span>
+        </div>
+        <div class="featurefive">
+          <h3>亏款进度</h3>
+          <span>31.92%</span>
+          <span>查看详情 <a href=""><img src="./img/right.png"></a></span>
+        </div>
+        <div class="middleDown">
+          <img src="./img/getmoney.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--身体-->
+  <div class="little_body">
+    <!-- 表格-->
+    <div class="all_tables">
+
+      <!-- table  left-->
+      <div class="left_table">
+        <!-- 左侧表格1-->
+        <div class="left_up_table">
+          <!--左表1标题-->
+          <div class="left_up_table_title">
+            <img src="./img/table.png"><span>月底销售额趋势分析</span>
+          </div>
+          <!--左表1实现-->
+          <div id="left_up" class="left_up_table_script"></div>
+          <script>left_up_table()</script>
+        </div>
+
+        <!-- 左侧表格2-->
+        <div id="left_down" class="left_down_table" >
+          <script>left_down_table()
+          </script>
+        </div>
+      </div>
+
+      <!-- table right-->
+      <div class="right_table">
+        <!--数据表-->
+        <div class="right_up_table" >
+          <div class="right_up_table_title">
+            <img src="./img/table.png"><span>区域情况明细表</span>
+          </div>
+
+          <div class="right_up_table_script">
+            <table class="table" >
+              <tr><td>区域名称</td> <td>销量</td> <td>总销售额</td> <td>总成本</td> <td>现金</td> <td>总毛利额</td></tr>
+              <tr><td>1</td> <td>349</td> <td>6456.23</td> <td>2884.08</td> <td>266.95</td> <td>4196.26</td></tr>
+              <tr><td>2</td> <td>430</td> <td>8406.45</td> <td>3242.3</td> <td>459.86</td> <td>5822.24</td></tr>
+              <tr><td>3</td> <td>498</td> <td>7560.28</td> <td>2342.24</td> <td>366.42</td> <td>4928.26</td></tr>
+              <tr><td>4</td> <td>254</td> <td>5634.08</td> <td>1542.49</td> <td>226.38</td> <td>3351.76</td></tr>
+              <tr><td>5</td> <td>349</td> <td>6456.23</td> <td>2884.78</td> <td>286.95</td> <td>4169.26</td></tr>
+              <tr><td>6</td> <td>430</td> <td>8406.45</td> <td>3242.30</td> <td>459.86</td> <td>5822.24</td></tr>
+              <tr><td>7</td> <td>498</td> <td>7560.28</td> <td>2345.34</td> <td>366.42</td> <td>4928.26</td></tr>
+              <tr><td>8</td> <td>254</td> <td>5634.08</td> <td>1542.49</td> <td>226.38</td> <td>3351.76</td></tr>
+            </table>
+            <script>
+              $("tr:even").css("background-color","#f4f3f9")
+              $("tr:eq(0)").css("text-align","center")
+            </script>
+          </div>
+        </div>
+
+        <!--右下表-->
+        <div class="right_down_table">
+          <!--右下标题-->
+          <div class="right_down_table_title">
+            <img src="./img/table.png"><span>个人情况柱状图</span>
+          </div>
+          <!--右下实现-->
+          <div id="right_down" class="right_down_table_script">
+            <script>right_down_table()
+            </script>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- 页脚-->
+  <div class="last">
+      <div class="last_box">
+        <span>欢迎大家加入我们！</span>
+        <span>联系方式：<a href="">www.cqSkyHouse.money.cn</a></span>
+      </div>
+  </div>
+</div>
+</body>
+</html>
