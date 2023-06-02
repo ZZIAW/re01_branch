@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="xy,fwy,zly,wxf,tsm,thl,wc,zxy" />
+    <title>Class Over</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/over.css" />
+    <script
+      type="application/javascript"
+      src="js/over.js"
+      charset="UTF-8"
+    ></script>
+    <script
+      type="application/javascript"
+      src="./jquery-2.2.4.js"
+      charset="UTF-8"
+    ></script>
+    <script
+      type="application/javascript"
+      src="js/echarts.min.js"
+      charset="UTF-8"
+    ></script>
+  </head>
+
+  <body
+    style="
+      background-color: #f9a3b7;
+      background-image: url('./gif/gif_bg2.gif');
+      background-size: cover;
+    "
+  >
+    <div style="width: 100%; height: 100%">
+      <!-- 标题-->
+      <div class="title">
+        <div class="title_box">
+          <!--    左标题-->
+          <div class="title_box_left">
+            <span>
+              <strong
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;重庆天宫房地产集团8月份销售看板&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong
+              >
+            </span>
+          </div>
+
+          <!--右标题-->
+          <div class="title_box_right">
+            <span style="color: #f9a3b7; -webkit-text-stroke-color: black"
+              >选择日期:</span
+            >
+            <input type="date" style="height: 25px; margin-left: 10px" />
+          </div>
+        </div>
+      </div>
+
+      <!-- 总销售额...... -->
+      <div id="1" class="little_title">
+        <div id="2" class="feature">
+          <div id="3.1" class="featurelfte">
+            <div id="ABC" class="score1_table">
+              <script>
+                ring();
+              </script>
+            </div>
+
+            <div id="progress1"></div>
+          </div>
+          <div id="3.2" class="featuremiddle">
+            <div id="box1">
+              <div
+                id="boxone"
+                style="
+                  background-image: url('./img/money1.jpg');
+                  background-size: cover;
+                "
+              >
+                <div class="boxoneone">
+                  <strong><h2>总毛利额</h2></strong>
+                  <strong><span>579.44w</span></strong>
+                </div>
+              </div>
+            </div>
+            <div id="box2">
+              <div
+                id="boxtwo"
+                style="
+                  background: url('./img/money2.JPG');
+                  background-size: cover;
+                  filter: alpha(opacity=0.5);
+                "
+              >
+                <div class="boxtwotwo">
+                  <strong><h1>总销售额</h1></strong>
+                  <strong><span>1214.23w</span></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="3.3" class="featureRight">
+            <div id="score2">
+              <script>
+                ring2();
+              </script>
+            </div>
+            <div id="progress2"></div>
+          </div>
+        </div>
+      </div>
+
+      <!--身体-->
+      <div class="little_body">
+        <!-- 表格-->
+        <div class="all_tables">
+          <!-- table  left-->
+          <div class="left_table">
+            <!-- 左侧表格1-->
+            <div class="left_up_table" style="color: #32e5ff">
+              <!--左表1标题-->
+              <div class="left_up_table_title">
+                <img src="./img/table.png" /><span>月底销售额趋势分析</span>
+              </div>
+              <!--左表1实现-->
+              <div id="left_up" class="left_up_table_script"></div>
+              <script>
+                left_up_table();
+              </script>
+            </div>
+
+            <!-- 左侧表格2-->
+            <div id="left_down" class="left_down_table" style="color: #32e5ff">
+              <div class="left_down_table_title">
+                <img src="./img/table.png" /><span>毛利额趋势分析</span>
+              </div>
+              <div>
+                <script>
+                  left_down_table();
+                </script>
+              </div>
+            </div>
+          </div>
+
+          <!-- table right-->
+          <div class="right_table">
+            <!--数据表-->
+            <div class="right_up_table" style="color: #32e5ff">
+              <div class="right_up_table_title">
+                <img src="./img/table.png" /><span>区域情况明细表</span>
+              </div>
+
+              <div class="right_up_table_script">
+                <table class="table" style="color: #ffee8e">
+                  <tr>
+                    <td>区域名称</td>
+                    <td>销量</td>
+                    <td>总销售额</td>
+                    <td>总成本</td>
+                    <td>现金</td>
+                    <td>总毛利额</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>349</td>
+                    <td>6456.23</td>
+                    <td>2884.08</td>
+                    <td>266.95</td>
+                    <td>4196.26</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>430</td>
+                    <td>8406.45</td>
+                    <td>3242.3</td>
+                    <td>459.86</td>
+                    <td>5822.24</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>498</td>
+                    <td>7560.28</td>
+                    <td>2342.24</td>
+                    <td>366.42</td>
+                    <td>4928.26</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>254</td>
+                    <td>5634.08</td>
+                    <td>1542.49</td>
+                    <td>226.38</td>
+                    <td>3351.76</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>349</td>
+                    <td>6456.23</td>
+                    <td>2884.78</td>
+                    <td>286.95</td>
+                    <td>4169.26</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>430</td>
+                    <td>8406.45</td>
+                    <td>3242.30</td>
+                    <td>459.86</td>
+                    <td>5822.24</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>498</td>
+                    <td>7560.28</td>
+                    <td>2345.34</td>
+                    <td>366.42</td>
+                    <td>4928.26</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>254</td>
+                    <td>5634.08</td>
+                    <td>1542.49</td>
+                    <td>226.38</td>
+                    <td>3351.76</td>
+                  </tr>
+                </table>
+                <script>
+                  $("tr:even").css("background-color", "#f4f3f9");
+                  $("tr:eq(0)").css("text-align", "center");
+                </script>
+              </div>
+            </div>
+
+            <!--右下表-->
+            <div class="right_down_table" style="color: #32e5ff">
+              <!--右下标题-->
+              <div class="right_down_table_title">
+                <img src="./img/table.png" /><span>个人情况柱状图</span>
+              </div>
+              <!--右下实现-->
+              <div id="right_down" class="right_down_table_script">
+                <script>
+                  right_down_table();
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 页脚-->
+      <div class="last">
+        <div class="last_box">
+          <span>欢迎大家加入我们！</span>
+          <span>联系方式：<a href="">www.cqSkyHouse.money.cn</a></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
